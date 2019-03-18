@@ -5,10 +5,6 @@ import intake.catalog.local
 import intake.source.base
 import re
 from functools import partial
-from mongoquery import Query
-
-from intake_bluesky.core import parse_handler_registry
-
 
 class FilesCatalog(intake.catalog.Catalog):
     def __init__(self, file_list, handler, *,
