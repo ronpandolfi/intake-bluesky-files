@@ -157,6 +157,9 @@ class FileHandlerPlugin():
     def __init__(self, path):
         self.path = path
 
+    def metadata(self, *args, **kwargs) -> typing.Dict:
+        return {}
+
     @classproperty
     def ingestor(cls):
         return cls.ingestor_class(cls)
